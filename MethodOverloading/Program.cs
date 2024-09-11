@@ -6,8 +6,15 @@ namespace MethodOverloading
     {
         static void Main(string[] args)
         {
-            string answer = Add(1,0,true);
-            Console.WriteLine(answer);
+            
+            int addAnswer = Add(10, 10);
+            Console.WriteLine(addAnswer);
+            decimal decAnswer = Add(20.5m, 25.5m);
+            Console.WriteLine(decAnswer);
+            string answer1 = Add(1, 0, true);
+            Console.WriteLine(answer1);
+            string answer2 = Add(10, 15, true);
+            Console.WriteLine(answer2);
         }
 
         public static int Add(int x, int y)
